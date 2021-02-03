@@ -1,0 +1,42 @@
+main
+{
+    height: 100%;
+    padding: 50px 0;
+    display:flex;
+    justify-content: center;
+    background-image: url(../img/fondo-pag-speciali.jpg);
+
+     .container
+     {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+
+         h2
+         {
+             align-self: flex-start;
+             margin-left: 16%;
+         }
+
+            .cards
+            {
+                display: flex;
+                flex-wrap: wrap;
+                width: 70%;
+
+                
+                .card
+                {
+                    width: calc(100% / 3 - 10px);
+                    margin: 5px;
+
+                    img
+                    {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+}
