@@ -72,14 +72,15 @@ main .container .cards .card img {
 }
 
 footer {
-  height: 600px;
+  height: 100%;
   background-image: url(../img/footer-montagne-bottom.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 40px 0;
+  padding: 50px 0 120px 0;
+  color: #A2A9B4;
 }
 footer .columns {
   width: 80%;
@@ -96,6 +97,11 @@ footer .columns .column {
 }
 footer .columns .column ul {
   list-style: none;
+  margin-bottom: 20px;
+}
+footer .columns .column ul a {
+  text-decoration: none;
+  color: #A2A9B4;
 }
 footer .columns .column img {
   width: 70%;

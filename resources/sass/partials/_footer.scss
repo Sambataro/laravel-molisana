@@ -1,17 +1,18 @@
 footer
 {
-    height: 600px;
+    height: 100%;
     background-image: url(../img/footer-montagne-bottom.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px 0;
+    padding: 50px 0 120px 0;
+    color: $footer_text_color;
 
      .columns
      {
-         width: 80%;
+         width: $section_align_width;
          display: flex;
          justify-content: center;
          align-items: flex-start;
@@ -27,6 +28,13 @@ footer
             ul
             {
                 list-style: none;
+                margin-bottom: 20px;
+
+                a
+                {
+                    text-decoration: none;
+                    color: $footer_text_color
+                }
             }
 
             img
