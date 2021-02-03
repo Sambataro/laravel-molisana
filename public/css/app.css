@@ -55,6 +55,7 @@ main .container {
 main .container h2 {
   align-self: flex-start;
   margin-left: 16%;
+  color: #133D7F;
 }
 main .container .cards {
   display: flex;
@@ -72,5 +73,7 @@ main .container .cards .card img {
 
 footer {
   height: 600px;
-  background-color: lightblue;
+  background-image: url(../img/footer-montagne-bottom.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
