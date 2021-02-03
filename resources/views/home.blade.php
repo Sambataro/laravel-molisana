@@ -1,9 +1,9 @@
 @extends('layouts.layout')
 
 @section('content')
-
+        <main>
             <div class="container">
-            <h2>LE LUNGHE</h2>
+                <h2>LE LUNGHE</h2>
                 <div class="cards">
                   @foreach ($lunghe as $pasta)
                     <div class="card">
@@ -30,5 +30,6 @@
                     @endforeach
                 </div>
             </div>
-
+        </main>
+            
 @endsection

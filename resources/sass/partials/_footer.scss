@@ -4,4 +4,36 @@ footer
     background-image: url(../img/footer-montagne-bottom.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+
+     .columns
+     {
+         width: 80%;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+
+         .column
+         {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% / 3);
+            height: 100%;
+            padding: 0 40PX;
+
+            ul
+            {
+                list-style: none;
+            }
+
+            img
+            {
+                width: 70%;
+            }
+         }
+     }
+
 }
