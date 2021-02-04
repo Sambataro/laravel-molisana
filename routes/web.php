@@ -133,7 +133,10 @@ Route::get('/', function () {
     $corte = [];
     $cortissime = [];
 
-    foreach($data as $pasta) {
+    foreach($data as $key => $pasta) {
+
+        $pasta["id"] = $key;
+
         if ($pasta['tipo'] == "lunga" ){
             $lunghe[] = $pasta;
         }elseif($pasta['tipo'] == "corta" ){
@@ -142,13 +145,14 @@ Route::get('/', function () {
             $cortissime[] = $pasta;
         }
     }
-    return view('home' , [
-        "lunghe" => $lunghe,
-        "corte" => $corte,
-        "cortissime" => $cortissime
-    ]);
-});
 
-Route::get('news', function (){
+    return view('home' , compact('lunghe' , 'corte' , 'cortissime'));
+})->name('home');
+
+Route::get('/news', function (){
     return view('news');
-});
+})->name('news');
+
+Route::get('/prodotto/{idProdotto}', function ($id){
+    return view('product');
+})->name('prodotto');

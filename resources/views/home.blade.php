@@ -3,35 +3,20 @@
 @section('content')
         <main>
             <div class="container">
-                <h2>LE LUNGHE</h2>
-                <div class="cards">
-                  @foreach ($lunghe as $pasta)
-                    <div class="card">
-                        <img src="{{$pasta['src']}}" alt="">
-                        <div class="text-card"><a href=""><h4>{{$pasta['titolo']}}</h4></a></div>
-                    </div>
-                    @endforeach
-                </div>
+            @include('partials.cards' , [
+            'title' => 'LE LUNGHE',
+            'pastaArray' => $lunghe
+            ])
 
-                <h2>LE CORTE</h2>
-                <div class="cards">
-                  @foreach ($corte as $pasta)
-                    <div class="card">
-                        <img src="{{$pasta['src']}}" alt="">
-                        <div class="text-card"><a href=""><h4>{{$pasta['titolo']}}</h4></a></div>
-                    </div>
-                    @endforeach
-                </div>
+            @include('partials.cards' , [
+            'title' => 'LE CORTE',
+            'pastaArray' => $corte
+            ])
 
-                <h2>LE CORTISSIME</h2>
-                <div class="cards">
-                  @foreach ($cortissime as $pasta)
-                    <div class="card">
-                        <img src="{{$pasta['src']}}" alt="">
-                        <div class="text-card"><a href=""><h4>{{$pasta['titolo']}}</h4></a></div>
-                    </div>
-                    @endforeach
-                </div>
+            @include('partials.cards' , [
+            'title' => 'LE CORTISSIME',
+            'pastaArray' => $cortissime
+            ])
             </div>
         </main>
             

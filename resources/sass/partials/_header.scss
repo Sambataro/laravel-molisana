@@ -18,22 +18,29 @@ header
     {
         display: flex;
         list-style: none;
+        
         li 
         {
             margin: 0 5px;
             padding: 15px 10px;
 
-            &:hover 
-            {
-                background-color: #CBEEFD;
-                cursor: pointer;
-            }
+            // &:hover 
+            // {
+            //     background-color: #CBEEFD;
+            //     cursor: pointer;
+            // }
 
             a
             {
                 text-decoration: none;
                 color: black;
             }
+        }
+
+        .active
+        {
+           
+            background-color: #DAEDF3;
         }
     }
 }
