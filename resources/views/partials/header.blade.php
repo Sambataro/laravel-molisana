@@ -4,7 +4,7 @@
         <li class="{{ Route::currentRouteName() == 'home' ? 'active' : '' }}">
             <a href="{{ route('home') }}">HOME</a>
         </li>
-        <li class="{{ Route::currentRouteName() == 'prodotto' ? 'active' : '' }}"><a href="{{ route('prodotto', [ 'idProdotto' => 0 ] )}}">PRODOTTI</a></li>
+        <li class="{{ Route::currentRouteName() == 'product' ? 'active' : '' }}"><a href="{{ route('product', [ 'id' => 0 ] )}}">PRODOTTI</a></li>
         <li class="{{ Route::currentRouteName() == 'news' ? 'active' : '' }}">
             <a href="{{ route('news') }}">NEWS</a>
         </li>

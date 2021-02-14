@@ -18,6 +18,5 @@
             'pastaArray' => $cortissime
             ])
             </div>
-        </main>
-            
+        </main>  
 @endsection

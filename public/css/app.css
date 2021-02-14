@@ -91,6 +91,17 @@ main .container .cards .card:hover .text-card {
   opacity: 1;
 }
 
+#product {
+  background-image: none;
+  background-color: #B8DBE6;
+}
+#product .container {
+  width: 70%;
+}
+#product .container p {
+  font-size: 20px;
+}
+
 footer {
   height: 100%;
   background-image: url(../img/footer-montagne-bottom.jpg);
